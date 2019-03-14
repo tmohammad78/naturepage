@@ -4,12 +4,20 @@
   "description": "landing page",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss css/style.css -w "
+    "compile:sass": "node-sass sass/main.scss css/style.css -w "
   },
   "author": "mohammad",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmohammad78/naturepage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tmohammad78/naturepage/issues"
+  },
+  "homepage": "https://github.com/tmohammad78/naturepage#readme"
 }
