@@ -132,6 +132,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -175,6 +178,30 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.8rem;
+  transform: skewX(-12edg); }
+  .story > * {
+    transform: skewX(12edg); }
+  .story .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem); }
+  .story .story__image {
+    height: 100%; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -201,6 +228,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #18df5a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #18df5a; }
 
 .btn::after {
   content: "";
@@ -239,9 +272,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem; }
   .card__side {
-    height: 50rem;
+    height: 52rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -251,12 +284,14 @@ body {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     overflow: hidden; }
-    .card__side--front {
-      background-color: orangered; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #6cc05c, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
@@ -270,9 +305,9 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
     .card__picture--2 {
-      background-image: url("../img/nat-6.jpg"); }
+      background-image: linear-gradient(to right bottom, #6cc05c, #28b485), url("../img/nat-6.jpg"); }
     .card__picture--3 {
-      background-image: url("../img/nat-5.jpg"); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -289,6 +324,33 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(108, 192, 92, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  .card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; }
+    .card__details ul li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem; }
+      .card__details ul li:not(:last-child) {
+        border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .card__price-value {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 100%; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -306,8 +368,12 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -20rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
 
 .header {
   height: 95vh;
