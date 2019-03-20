@@ -379,6 +379,7 @@ body {
   display: none; }
 
 .navigation .navigation__nav {
+  display: none;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -405,7 +406,8 @@ body {
   color: white;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
 
 .navigation .navigation__background {
   display: none;
@@ -441,21 +443,29 @@ body {
   transform: translateX(1rem); }
 
 .navigation .navigation__icon {
-  position: relative;
-  margin-top: 3.5rem; }
+  margin-top: 3rem;
+  position: relative; }
   .navigation .navigation__icon, .navigation .navigation__icon::before, .navigation .navigation__icon::after {
     width: 3rem;
     height: 2px;
     background-color: #777;
-    display: inline-block; }
+    display: inline-block;
+    transition: all .2s; }
   .navigation .navigation__icon::after, .navigation .navigation__icon::before {
     content: "";
     position: absolute;
-    left: 0; }
+    left: 0;
+    transition: all .2s; }
   .navigation .navigation__icon::before {
-    top: -1rem; }
+    top: -.8rem; }
   .navigation .navigation__icon::after {
-    top: 1rem; }
+    top: .8rem; }
+  .navigation .navigation__icon-isactive::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation .navigation__icon-isactive::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .header {
   height: 95vh;
