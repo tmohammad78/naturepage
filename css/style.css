@@ -375,6 +375,88 @@ body {
   padding: 15rem 0;
   background-color: #f7f7f7; }
 
+.navigation .navigation__checkbox {
+  display: none; }
+
+.navigation .navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.navigation .navigation__list {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation .navigation__button {
+  background-color: #fff;
+  height: 6rem;
+  width: 6rem;
+  position: fixed;
+  text-align: center;
+  top: 7rem;
+  right: 6rem;
+  color: white;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+
+.navigation .navigation__background {
+  display: none;
+  height: 6rem;
+  width: 6rem;
+  position: fixed;
+  border-radius: 50%;
+  top: 7rem;
+  right: 6rem;
+  background-image: radial-gradient(#6cc05c, #28b485);
+  z-index: 1000;
+  transform: scale(55); }
+
+.navigation .navigation__item {
+  margin: 1rem; }
+
+.navigation .navigation__link:link, .navigation .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 200%;
+  transition: all .4s; }
+  .navigation .navigation__link:link span, .navigation .navigation__link:visited span {
+    margin-left: 1rem; }
+
+.navigation .navigation__link:active, .navigation .navigation__link:hover {
+  background-position: 100%;
+  color: #18df5a;
+  transform: translateX(1rem); }
+
+.navigation .navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation .navigation__icon, .navigation .navigation__icon::before, .navigation .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #777;
+    display: inline-block; }
+  .navigation .navigation__icon::after, .navigation .navigation__icon::before {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .navigation .navigation__icon::before {
+    top: -1rem; }
+  .navigation .navigation__icon::after {
+    top: 1rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(108, 192, 92, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");

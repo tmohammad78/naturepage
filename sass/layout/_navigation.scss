@@ -1,0 +1,109 @@
+.navigation{
+    .navigation__checkbox{
+        display: none;
+    }
+    .navigation__nav{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500;
+    }
+    .navigation__list{
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%,-50%);
+        list-style: none;
+        text-align: center;
+    }
+    .navigation__button{
+        background-color:$color-white;
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        text-align: center;
+        top: 7rem;
+        right: 6rem;
+        color: white;
+        border-radius: 50%;
+
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba($color-black,.1);
+
+    }
+    .navigation__background{
+        display: none;
+
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        border-radius: 50%;
+        top: 7rem;
+        right: 6rem;
+        background-image: radial-gradient($color-primary-light,$color-primary-dark);
+        z-index: 1000;
+
+        transform: scale(55);
+
+    }
+    .navigation__item{
+        margin: 1rem;       
+    }
+    .navigation__link{
+        &:link,
+        &:visited{
+            display: inline-block;
+            font-size: 3rem;
+            color: $color-white;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-image: linear-gradient(120deg, transparent 0% , transparent 50% ,$color-white 50%);
+            background-size: 200%;
+            transition: all .4s;
+            span{
+                margin-left: 1rem;
+                // display: inline-block;
+
+            }
+        }
+        &:active,
+        &:hover{
+            background-position:100%; 
+            color: $color-primary;
+            transform: translateX(1rem);
+        }
+        
+
+ 
+
+    }
+
+    .navigation__icon{
+        position: relative;
+        margin-top: 3.5rem;
+        &,
+        &::before,
+        &::after{
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark;
+            display: inline-block;
+        }
+        &::after,
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            
+        }
+
+            &::before{
+                top: -1rem;
+            }
+            &::after{top: 1rem;}
+    }
+    
+}
