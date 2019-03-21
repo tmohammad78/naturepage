@@ -57,6 +57,15 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5); }
+  50% { }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -516,7 +525,8 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    animation: popup 1s; }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
@@ -538,6 +548,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
   .popup__close:link, .popup__close:visited {
     color: #000;
     position: absolute;
@@ -546,4 +559,7 @@ body {
     font-size: 3rem;
     text-decoration: none;
     display: inline-block;
-    transition: all .3s; }
+    transition: all .3s;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #18df5a; }

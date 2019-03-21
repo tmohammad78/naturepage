@@ -5,8 +5,10 @@ $(document).ready(function(){
         $('.navigation__background').toggle();
         $('.navigation__background').toggleClass("navigation__background-isactive");
     });
-    $('#popup').on("click",()=>{
-        $('.test').addClass("popup").append(`  <div class="popup__content">
+    $('.showpopup').on("click",()=>{
+        $('.test').addClass('popup').append(`
+
+        <div class="popup__content">
         <div class="popup__left">
             <img src="img/nat-8.jpg" alt="tour photo" class="popup__img">
             <img src="img/nat-9.jpg" alt="tour photo" class="popup__img"> 
@@ -21,8 +23,10 @@ $(document).ready(function(){
     </div>
         `);
     });
-    $('.popup__close').on("click",()=>{
-        $('.test').removeClass("popup");
+
+    $('.popup__close').on("click",function(){
+        $('.test').fadeOute(2000,function(){
+alert("vs")        });
     });
     
 });
