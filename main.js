@@ -5,4 +5,7 @@ $(document).ready(function(){
         $('.navigation__background').toggle();
         $('.navigation__background').toggleClass("navigation__background-isactive");
     });
+    $('#popup').on("click",()=>{
+        $(;)
+    });
 });
