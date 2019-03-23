@@ -1,23 +1,22 @@
 {
-  "name": "testing",
+  "name": "naturepage",
   "version": "1.0.0",
-  "description": "landing page",
-  "main": "index.js",
+  "description": "",
+  "main": "main.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w "
-  },
-  "author": "mohammad",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^4.11.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tmohammad78/naturepage.git"
   },
+  "author": "mohammad",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/tmohammad78/naturepage/issues"
   },
-  "homepage": "https://github.com/tmohammad78/naturepage#readme"
+  "homepage": "https://github.com/tmohammad78/naturepage#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
