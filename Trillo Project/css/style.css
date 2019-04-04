@@ -89,7 +89,8 @@ body {
     fill: var(--color-Grey-dark-3); }
 
 .user-nav {
-  background-color: greenyellow; }
+  background-color: greenyellow;
+  display: flex; }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem; }
