@@ -16,7 +16,6 @@
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15 );
         overflow: hidden;
-
         &--front{
             // background-color: orangered;
         }
@@ -30,11 +29,8 @@
             }
             &-3{
                 background-image: linear-gradient(to right bottom,$color-tertiary-light,$color-tertiary-dark);
-
             }
-            
         }
-
     }
     &:hover &__side--front {
         transform: rotateY(180deg);
@@ -46,7 +42,6 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
-       
         -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
         clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
         &--1{
@@ -73,17 +68,11 @@
         top: 12rem;
         right: 2rem;
         width: 75%;
-
-        
-
-
-
     }
     &__heading-span{
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        
         &--1{
             background-image: linear-gradient(to right bottom,rgba($color-secondary-light,.85),rgba($color-secondary-dark,.85));
         }
@@ -96,8 +85,6 @@
 
     }
     &__details{
-        
-
         ul{
             list-style: none;
             width: 80%;
@@ -135,10 +122,7 @@
         text-align: center;
         font-size: 6rem;
         font-weight: 100%;
-
-
     }
-
     @media only screen and (max-width:56.26em),
     only screen and (hover:none){
     height: auto;
