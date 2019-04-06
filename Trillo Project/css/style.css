@@ -179,7 +179,10 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-1); }
+  border-bottom: var(--color-grey-light-1);
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
 
 .content {
   display: flex; }
